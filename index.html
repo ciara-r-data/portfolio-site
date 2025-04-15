@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>US Sales YOY Dashboard | Ciara Janay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+    h1 {
+      margin-bottom: 5px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+    .iframe-container, .insights-container {
+      flex: 1 1 400px;
+      max-width: 650px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 8px;
+    }
+    .section-title {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>US Sales YOY Dashboard</h1>
+    <p>Interactive Power BI report by Ciara Janay</p>
+  </header>
+
+  <div class="container">
+    <div class="iframe-container">
+      <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYmUxYmYzYzMtMzkyZi00NzE0LWFlYmQtYmJmNGYzMmRmOTMzIiwidCI6ImU1YWQxODI4LWZiNWUtNDU3OS05MWM3LTlkODk4ZTRhMDY1MyJ9"></iframe>
+    </div>
+
+    <div class="insights-container">
+      <div class="section-title">🧩 Problem Statement</div>
+      <p>Understanding year-over-year (YOY) sales trends in the United States to identify regions with the highest growth and sales seasonality patterns.</p>
+
+      <div class="section-title">🛠 Steps Followed</div>
+      <ul>
+        <li>Data cleaning and transformation in Power Query</li>
+        <li>DAX measures for YOY comparison and dynamic KPIs</li>
+        <li>Slicer setup for dynamic region and category filtering</li>
+        <li>Custom visuals for trend analysis</li>
+      </ul>
+
+      <div class="section-title">📈 Key Insights</div>
+      <ul>
+        <li>Western region showed the highest YOY growth in Q4</li>
+        <li>Sales dipped in Q2 across all regions, indicating potential supply chain challenges</li>
+        <li>Category X outperformed consistently, contributing 25% to total revenue</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
