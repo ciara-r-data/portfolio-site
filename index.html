@@ -22,20 +22,21 @@
     }
     .container {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       padding: 20px;
       gap: 20px;
       align-items: flex-start;
     }
     .iframe-container {
-      flex: 3;
+      width: 75%;
       background: #fff;
       border-radius: 10px;
       padding: 20px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     .insights-container {
-      flex: 1;
+      width: 25%;
       max-height: 500px;
       overflow-y: auto;
       background: #fff;
@@ -66,7 +67,6 @@
         flex-direction: column;
       }
       .iframe-container, .insights-container {
-        flex: none;
         width: 100%;
         max-height: none;
         overflow: visible;
