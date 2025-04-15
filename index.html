@@ -22,22 +22,20 @@
     }
     .container {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       padding: 20px;
       gap: 20px;
+      align-items: flex-start;
     }
     .iframe-container {
-      flex-basis: 75%;
-      max-width: 75%;
+      flex: 3;
       background: #fff;
       border-radius: 10px;
       padding: 20px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     .insights-container {
-      flex-basis: 23%;
-      max-width: 23%;
+      flex: 1;
       max-height: 500px;
       overflow-y: auto;
       background: #fff;
@@ -64,9 +62,12 @@
     }
 
     @media (max-width: 1000px) {
+      .container {
+        flex-direction: column;
+      }
       .iframe-container, .insights-container {
-        flex-basis: 100%;
-        max-width: 100%;
+        flex: none;
+        width: 100%;
         max-height: none;
         overflow: visible;
       }
