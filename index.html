@@ -24,12 +24,20 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
       padding: 20px;
     }
-    .iframe-container, .insights-container {
-      flex: 1 1 400px;
-      max-width: 650px;
+    .iframe-container {
+      flex: 3;
+      min-width: 0;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-right: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .insights-container {
+      flex: 1;
+      min-width: 0;
       background: #fff;
       border-radius: 10px;
       padding: 20px;
