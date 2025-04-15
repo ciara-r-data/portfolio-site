@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciara Janay | Power BI Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    p.subtitle {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #666;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+    .card {
+      width: 300px;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card-content h3 {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
+    .card-content p {
+      font-size: 0.95em;
+      color: #555;
+    }
+    .card-content a {
+      display: inline-block;
+      margin-top: 15px;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ciara Janay</h1>
+    <p class="subtitle">Power BI Portfolio – Dashboards, Insights & Data Storytelling</p>
+  </header>
+
+  <section class="projects">
+    <div class="card">
+      <img src="assets/us-sales-thumbnail.png" alt="US Sales YOY Dashboard">
+      <div class="card-content">
+        <h3>US Sales YOY Dashboard</h3>
+        <p>Explore YOY trends across U.S. sales regions and categories in this interactive Power BI report.</p>
+        <a href="us-sales-yoy.html">View Project →</a>
+      </div>
+    </div>
+
+    <!-- More project cards can be added here -->
+
+  </section>
+</body>
+</html>
