@@ -68,11 +68,15 @@
       width: 100%;
     }
     @media (min-width: 768px) {
+      main {
+        flex-wrap: nowrap;
+      }
       .left-column {
         width: 30%;
       }
       .right-column {
         width: 68%;
+        order: -1;
         position: sticky;
         top: 20px;
         height: 100vh;
@@ -123,6 +127,10 @@
   </header>
 
   <main>
+    <div class="column right-column">
+      <iframe src="https://app.powerbi.com/view?r=eyJrIjoiODNlMGE0YzUtNmM3ZS00Y2ZhLTgxNWYtODE1ZDg3MmZmNDFjIiwidCI6ImU1YWQxODI4LWZiNWUtNDU3OS05MWM3LTlkODk4ZTRhMDY1MyJ9"></iframe>
+    </div>
+
     <div class="column left-column">
       <a href="index.html">← Back to Portfolio</a>
       <h2>NSAT Predictor Tool: Drive CX Improvements Through ASA Efficiency</h2>
@@ -173,10 +181,6 @@
       </ul>
 
       <p><a href="files/NSAT-Predictive-Model.pbix">⬇️ Download .pbix file</a></p>
-    </div>
-
-    <div class="column right-column">
-      <iframe src="https://app.powerbi.com/view?r=eyJrIjoiODNlMGE0YzUtNmM3ZS00Y2ZhLTgxNWYtODE1ZDg3MmZmNDFjIiwidCI6ImU1YWQxODI4LWZiNWUtNDU3OS05MWM3LTlkODk4ZTRhMDY1MyJ9"></iframe>
     </div>
   </main>
 
