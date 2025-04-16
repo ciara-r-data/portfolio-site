@@ -6,6 +6,10 @@
   <title>Ciara Rechtzigel | Power BI Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --orange-accent: #ff7f00;
+      --pink-accent: #D5008F;
+    }
     body {
       font-family: 'Fira Code', monospace;
       margin: 0;
@@ -32,6 +36,11 @@
     header span {
       font-size: 0.9em;
       opacity: 0.8;
+    }
+    footer {
+      background-color: var(--pink-accent);
+      color: #ffffff;
+      justify-content: center;
     }
     main {
       display: flex;
@@ -72,7 +81,7 @@
       margin-bottom: 10px;
     }
     a {
-      color: #1a73e8;
+      color: var(--orange-accent);
       text-decoration: none;
       font-weight: 500;
     }
