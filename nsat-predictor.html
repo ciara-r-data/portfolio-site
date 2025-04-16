@@ -56,13 +56,14 @@
       flex: 1;
     }
     .column {
-      padding: 20px;
+      ---padding: 20px;
       box-sizing: border-box;
       background-color: #ffffff;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
     .left-column {
+      padding: 20px;
       width: 30%;
     }
     .right-column {
@@ -164,7 +165,7 @@
     </div>
 
     <div class="column right-column">
-      <p>This is a live interactive dashboard. Built with Power BI using DAX, Power Query, and custom visuals.</p>
+      <p style="padding: 20px;">This is a live interactive dashboard. Built with Power BI using DAX, Power Query, and custom visuals.</p>
 
       <iframe style="height=100%" src="https://app.powerbi.com/view?r=eyJrIjoiODNlMGE0YzUtNmM3ZS00Y2ZhLTgxNWYtODE1ZDg3MmZmNDFjIiwidCI6ImU1YWQxODI4LWZiNWUtNDU3OS05MWM3LTlkODk4ZTRhMDY1MyJ9"></iframe>
     </div>
