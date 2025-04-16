@@ -12,11 +12,34 @@
       background-color: #f9f9f9;
       color: #333;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       min-height: 100vh;
+    }
+    header, footer {
+      background-color: #1a1a1a;
+      color: #f9f9f9;
+      padding: 10px 20px;
+      font-size: 0.9em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1, footer p {
+      margin: 0;
+      font-size: 1em;
+      font-weight: 400;
+    }
+    header span {
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+    main {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
       padding: 40px;
       box-sizing: border-box;
-      gap: 40px;
+      flex: 1;
     }
     .column {
       padding: 20px;
@@ -63,37 +86,47 @@
   </style>
 </head>
 <body>
-  <div class="column left-column">
+  <header>
     <h1>Ciara Rechtzigel</h1>
-    <p>Customer Experience Analyst with 5+ years of experience using Power BI, SQL, and DAX to deliver data-driven insights. Passionate about creating intuitive dashboards and scalable data models.</p>
+    <span>Customer Experience Analyst • Power BI Developer • Data Storyteller</span>
+  </header>
 
-    <h2>Skills</h2>
-    <ul>
-      <li>Power BI & DAX</li>
-      <li>SQL (MS SQL Server)</li>
-      <li>Python</li>
-      <li>Data Modeling</li>
-      <li>Customer Experience Analytics</li>
-      <li>Data Architecture (in progress)</li>
-    </ul>
+  <main>
+    <div class="column left-column">
+      <h1>Ciara Rechtzigel</h1>
+      <p>Customer Experience Analyst with 5+ years of experience using Power BI, SQL, and DAX to deliver data-driven insights. Passionate about creating intuitive dashboards and scalable data models.</p>
 
-    <h2>Current Position</h2>
-    <p>Customer Experience Analyst @ Sleep Number</p>
+      <h2>Skills</h2>
+      <ul>
+        <li>Power BI & DAX</li>
+        <li>SQL (MS SQL Server)</li>
+        <li>Python</li>
+        <li>Data Modeling</li>
+        <li>Customer Experience Analytics</li>
+        <li>Data Architecture (in progress)</li>
+      </ul>
 
-    <h2>Previous Positions</h2>
-    <p>Power BI Developer, Data Analyst</p>
+      <h2>Current Position</h2>
+      <p>Customer Experience Analyst @ Sleep Number</p>
 
-    <h2>Education</h2>
-    <p>M.S. in Data Science<br>B.A. in Graphic Design</p>
-  </div>
+      <h2>Previous Positions</h2>
+      <p>Power BI Developer, Data Analyst</p>
 
-  <div class="column middle-column">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="us-sales-yoy.html">US Sales YOY Dashboard</a> – Analyze YOY trends across regions and categories.</li>
-      <!-- Add more project links here -->
-    </ul>
-  </div>
-  </div>
+      <h2>Education</h2>
+      <p>M.S. in Data Science<br>B.A. in Graphic Design</p>
+    </div>
+
+    <div class="column middle-column">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="us-sales-yoy.html">US Sales YOY Dashboard</a> – Analyze YOY trends across regions and categories.</li>
+        <!-- Add more project links here -->
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ciara Rechtzigel • Built with HTML, Fira Code, and Power BI</p>
+  </footer>
 </body>
 </html>
