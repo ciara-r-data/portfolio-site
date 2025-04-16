@@ -55,6 +55,7 @@
       padding: 40px;
       box-sizing: border-box;
       flex: 1;
+      flex-wrap: wrap;
     }
     .column {
       box-sizing: border-box;
@@ -62,17 +63,21 @@
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
-    .left-column {
+    .left-column, .right-column {
       padding: 20px;
-      width: 30%;
+      width: 100%;
     }
-    .right-column {
-      padding: 20px;
-      width: 68%;
-      position: sticky;
-      top: 20px;
-      height: 100vh;
-      align-self: flex-start;
+    @media (min-width: 768px) {
+      .left-column {
+        width: 30%;
+      }
+      .right-column {
+        width: 68%;
+        position: sticky;
+        top: 20px;
+        height: 100vh;
+        align-self: flex-start;
+      }
     }
     h1 {
       font-size: 1.6em;
@@ -84,7 +89,7 @@
       color: #111;
     }
     ul {
-      ---list-style: none;
+      list-style: none;
       padding-left: 0;
       margin-left: 10px;
     }
@@ -108,7 +113,6 @@
       height: 90%;
       border: none;
       border-radius: 8px;
-      ---margin-top: 20px;
     }
   </style>
 </head>
@@ -129,34 +133,34 @@
       <h2>Steps Followed</h2>
       <ol>
         <li>Gathered Key Data Points:</li>
-          <ul>
-            <li>ASA and NSAT at a weekly level</li>
-            <li>Business impact tracking notes (e.g., outages, new hire onboarding, empathy weeks)</li>
-            <li>Fiscal calendar for week alignment</li>
-            <li style="font-style: italic;">(In this mock version, data was imported via CSV; in the live version at work, SQL was used to query from tables.)</li>
-          </ul>
+        <ul>
+          <li>ASA and NSAT at a weekly level</li>
+          <li>Business impact tracking notes (e.g., outages, new hire onboarding, empathy weeks)</li>
+          <li>Fiscal calendar for week alignment</li>
+          <li style="font-style: italic;">(In this mock version, data was imported via CSV; in the live version at work, SQL was used to query from tables.)</li>
+        </ul>
         <li>Merged and Modeled in Power BI:</li>
-          <ul>
-            <li>Used Power Query to merge all data sources into a unified weekly date table</li>
-            <li>Modeled all datasets on fiscal week start date</li>
-            <li>Created a custom regression table using DAX to calculate the correlation coefficient and build predictive logic</li>
-          </ul>
+        <ul>
+          <li>Used Power Query to merge all data sources into a unified weekly date table</li>
+          <li>Modeled all datasets on fiscal week start date</li>
+          <li>Created a custom regression table using DAX to calculate the correlation coefficient and build predictive logic</li>
+        </ul>
         <li>Built the Predictive Framework:</li>
-          <ul>
-            <li>Developed measures and calculated columns to predict NSAT values based on ASA trends</li>
-            <li>Compared actual vs predicted NSAT to evaluate model accuracy and detect outliers</li>
-          </ul>
+        <ul>
+          <li>Developed measures and calculated columns to predict NSAT values based on ASA trends</li>
+          <li>Compared actual vs predicted NSAT to evaluate model accuracy and detect outliers</li>
+        </ul>
         <li>Enabled Scenario Simulation:</li>
-          <ul>
-            <li>Built parameter slicers for Minutes and Seconds to allow users to adjust ASA inputs and view real-time NSAT predictions</li>
-            <li>Included KPI visuals to compare predictions against average performance and 2025 CX targets</li>
-          </ul>
+        <ul>
+          <li>Built parameter slicers for Minutes and Seconds to allow users to adjust ASA inputs and view real-time NSAT predictions</li>
+          <li>Included KPI visuals to compare predictions against average performance and 2025 CX targets</li>
+        </ul>
         <li>Visualized the Results:</li>
-          <ul>
-            <li>Created trend charts, correlation plots, and interactive tooltips that explain weekly performance</li>
-            <li>Added contextual callouts for business-impacting events to tell the story behind outliers</li>
-            <li>Published the final report to Power BI Service for stakeholder access</li>
-          </ul>
+        <ul>
+          <li>Created trend charts, correlation plots, and interactive tooltips that explain weekly performance</li>
+          <li>Added contextual callouts for business-impacting events to tell the story behind outliers</li>
+          <li>Published the final report to Power BI Service for stakeholder access</li>
+        </ul>
       </ol>
 
       <h2>Key Insights</h2>
