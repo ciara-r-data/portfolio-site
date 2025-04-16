@@ -118,28 +118,49 @@
       <h2>Problem Statement</h2>
       <p>Understanding the relationship between Average Speed of Answer (ASA) and Net Satisfaction (NSAT) is critical to optimizing customer experience in contact centers. Longer wait times are often assumed to lead to lower satisfaction, but the business needed a more quantitative approach to model this impact, simulate outcomes based on performance targets, and identify outlier patterns tied to operational realities (e.g., new hire ramp-ups or outages).</p>
 
-      <h2>⚙️ Steps Followed</h2>
+      <h2>Steps Followed</h2>
       <ul>
         <li>Gathered Key Data Points:</li>
           <ul>
             <li>ASA and NSAT at a weekly level</li>
             <li>Business impact tracking notes (e.g., outages, new hire onboarding, empathy weeks)</li>
             <li>Fiscal calendar for week alignment</li>
-            <li>(In this mock version, data was imported via CSV; in the live version at work, SQL was used to query from tables.)</li>
+            <li style="font-style: italic;">(In this mock version, data was imported via CSV; in the live version at work, SQL was used to query from tables.)</li>
           </ul>
-        <li>DAX measures for YOY comparison and dynamic KPIs</li>
-        <li>Slicer setup for dynamic region and category filtering</li>
-        <li>Custom visuals for trend analysis</li>
+        <li>Merged and Modeled in Power BI:</li>
+          <ul>
+            <li>Used Power Query to merge all data sources into a unified weekly date table</li>
+            <li>Modeled all datasets on fiscal week start date</li>
+            <li>Created a custom regression table using DAX to calculate the correlation coefficient and build predictive logic</li>
+          </ul>
+        <li>Built the Predictive Framework:</li>
+          <ul>
+            <li>Developed measures and calculated columns to predict NSAT values based on ASA trends</li>
+            <li>Compared actual vs predicted NSAT to evaluate model accuracy and detect outliers</li>
+          </ul>
+        <li>Enabled Scenario Simulation:</li>
+          <ul>
+            <li>Built parameter slicers for Minutes and Seconds to allow users to adjust ASA inputs and view real-time NSAT predictions</li>
+            <li>Included KPI visuals to compare predictions against average performance and 2025 CX targets</li>
+          </ul>
+        <li>Visualized the Results:</li>
+          <ul>
+            <li>Created trend charts, correlation plots, and interactive tooltips that explain weekly performance</li>
+            <li>Added contextual callouts for business-impacting events to tell the story behind outliers</li>
+            <li>Published the final report to Power BI Service for stakeholder access</li>
+          </ul>
       </ul>
 
-      <h2>📈 Key Insights</h2>
+      <h2>Key Insights</h2>
       <ul>
-        <li>Western region showed the highest YOY growth in Q4</li>
-        <li>Sales dipped in Q2 across all regions, indicating potential supply chain challenges</li>
-        <li>Category X outperformed consistently, contributing 25% to total revenue</li>
+        <li>There is a strong inverse correlation (r = -0.84) between ASA and NSAT, confirming that faster response times generally lead to better customer sentiment.</li>
+        <li>The predictive model allows CX teams to test “what-if” scenarios and proactively adjust staffing or operations to hit satisfaction goals.</li>
+        <li>Several outlier weeks were identified where NSAT remained high despite longer ASA—such as during empathy initiatives—demonstrating that agent quality and emotional connection can offset delays.</li>
+        <li>The model also flagged low NSAT weeks where ASA was within acceptable range, reinforcing the need for multi-variable monitoring.</li>
+        <li>Business stakeholders now have a clear, interactive tool that connects operational metrics to customer experience outcomes and helps prioritize improvements based on potential NSAT impact.</li>
       </ul>
 
-      <p><a href="files/US-Sales-YOY.pbix">⬇️ Download .pbix file</a></p>
+      <p><a href="files/NSAT-Predictive-Model.pbix">⬇️ Download .pbix file</a></p>
     </div>
 
     <div class="column right-column">
