@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>US Sales YOY Dashboard | Ciara Rechtzigel</title>
+  <title>NSAT Predictor Tool: Drive CX Improvements Through ASA Efficiency</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -115,12 +115,18 @@
     <div class="column left-column">
       <a href="index.html">← Back to Portfolio</a>
 
-      <h2>🔍 Problem Statement</h2>
-      <p>Understanding year-over-year (YOY) sales trends in the United States to identify regions with the highest growth and seasonality patterns.</p>
+      <h2>Problem Statement</h2>
+      <p>Understanding the relationship between Average Speed of Answer (ASA) and Net Satisfaction (NSAT) is critical to optimizing customer experience in contact centers. Longer wait times are often assumed to lead to lower satisfaction, but the business needed a more quantitative approach to model this impact, simulate outcomes based on performance targets, and identify outlier patterns tied to operational realities (e.g., new hire ramp-ups or outages).</p>
 
       <h2>⚙️ Steps Followed</h2>
       <ul>
-        <li>Data cleaning and transformation in Power Query</li>
+        <li>Gathered Key Data Points:</li>
+          <ul>
+            <li>ASA and NSAT at a weekly level</li>
+            <li>Business impact tracking notes (e.g., outages, new hire onboarding, empathy weeks)</li>
+            <li>Fiscal calendar for week alignment</li>
+            <li>(In this mock version, data was imported via CSV; in the live version at work, SQL was used to query from tables.)</li>
+          </ul>
         <li>DAX measures for YOY comparison and dynamic KPIs</li>
         <li>Slicer setup for dynamic region and category filtering</li>
         <li>Custom visuals for trend analysis</li>
