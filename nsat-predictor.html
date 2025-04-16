@@ -64,7 +64,7 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
     .left-column, .right-column {
-      ---padding: 20px;
+      padding: 20px;
       width: 100%;
     }
     @media (min-width: 768px) {
@@ -81,6 +81,15 @@
         top: 20px;
         height: 100vh;
         align-self: flex-start;
+        padding: 20px;
+      }
+    }
+    @media (max-width: 767px) {
+      .right-column {
+        padding: 0;
+      }
+      iframe {
+        height: 50vh;
       }
     }
     h1 {
@@ -134,7 +143,7 @@
     <div class="column left-column">
       <a href="index.html">← Back to Portfolio</a>
       <h2>NSAT Predictor Tool: Drive CX Improvements Through ASA Efficiency</h2>
-      <p>To the left or above is a live interactive dashboard with mock data and a full screen option. Viewing on desktop is recommended.</p>
+      <p>To the right is a live interactive dashboard with mock data and a full screen option.</p>
       <h2>Problem Statement</h2>
       <p>Understanding the relationship between Average Speed of Answer (ASA) and Net Satisfaction (NSAT) is critical to optimizing customer experience in contact centers. Longer wait times are often assumed to lead to lower satisfaction, but the business needed a more quantitative approach to model this impact, simulate outcomes based on performance targets, and identify outlier patterns tied to operational realities (e.g., new hire ramp-ups or outages).</p>
 
