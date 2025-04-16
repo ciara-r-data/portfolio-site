@@ -40,7 +40,8 @@
     footer {
       background-color: var(--pink-accent);
       color: #ffffff;
-      ---justify-content: center;
+      display: flex;
+      justify-content: center;
     }
     footer p {
       margin: 0;
@@ -56,7 +57,6 @@
       flex: 1;
     }
     .column {
-      ---padding: 20px;
       box-sizing: border-box;
       background-color: #ffffff;
       border-radius: 10px;
@@ -69,7 +69,10 @@
     .right-column {
       padding: 20px;
       width: 68%;
-      height: 100vh;
+      position: sticky;
+      top: 20px;
+      height: fit-content;
+      align-self: flex-start;
     }
     h1 {
       font-size: 1.6em;
@@ -168,8 +171,6 @@
     </div>
 
     <div class="column right-column">
-      
-
       <iframe src="https://app.powerbi.com/view?r=eyJrIjoiODNlMGE0YzUtNmM3ZS00Y2ZhLTgxNWYtODE1ZDg3MmZmNDFjIiwidCI6ImU1YWQxODI4LWZiNWUtNDU3OS05MWM3LTlkODk4ZTRhMDY1MyJ9"></iframe>
     </div>
   </main>
