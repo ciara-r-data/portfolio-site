@@ -12,11 +12,29 @@
       background-color: #f9f9f9;
       color: #333;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       min-height: 100vh;
+    }
+    header, footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    }
+    footer {
+      border-top: 1px solid #e0e0e0;
+      margin-top: 40px;
+      font-size: 0.75em;
+      color: #666;
+    }
+    main {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
       padding: 40px;
       box-sizing: border-box;
-      gap: 40px;
+      flex: 1;
     }
     .column {
       padding: 20px;
@@ -33,7 +51,7 @@
     }
     h1 {
       font-size: 1.6em;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
     h2 {
       font-size: 1em;
@@ -69,35 +87,46 @@
   </style>
 </head>
 <body>
-  <div class="column left-column">
-    <a href="index.html">← Back to Portfolio</a>
+  <header>
+    <h1>Ciara Rechtzigel</h1>
+    <p>Customer Experience Analyst • Power BI Developer • Data Storyteller</p>
+  </header>
 
-    <h2>🔍 Problem Statement</h2>
-    <p>Understanding year-over-year (YOY) sales trends in the United States to identify regions with the highest growth and seasonality patterns.</p>
+  <main>
+    <div class="column left-column">
+      <a href="index.html">← Back to Portfolio</a>
 
-    <h2>⚙️ Steps Followed</h2>
-    <ul>
-      <li>Data cleaning and transformation in Power Query</li>
-      <li>DAX measures for YOY comparison and dynamic KPIs</li>
-      <li>Slicer setup for dynamic region and category filtering</li>
-      <li>Custom visuals for trend analysis</li>
-    </ul>
+      <h2>🔍 Problem Statement</h2>
+      <p>Understanding year-over-year (YOY) sales trends in the United States to identify regions with the highest growth and seasonality patterns.</p>
 
-    <h2>📈 Key Insights</h2>
-    <ul>
-      <li>Western region showed the highest YOY growth in Q4</li>
-      <li>Sales dipped in Q2 across all regions, indicating potential supply chain challenges</li>
-      <li>Category X outperformed consistently, contributing 25% to total revenue</li>
-    </ul>
+      <h2>⚙️ Steps Followed</h2>
+      <ul>
+        <li>Data cleaning and transformation in Power Query</li>
+        <li>DAX measures for YOY comparison and dynamic KPIs</li>
+        <li>Slicer setup for dynamic region and category filtering</li>
+        <li>Custom visuals for trend analysis</li>
+      </ul>
 
-    <p><a href="files/US-Sales-YOY.pbix">⬇️ Download .pbix file</a></p>
-  </div>
+      <h2>📈 Key Insights</h2>
+      <ul>
+        <li>Western region showed the highest YOY growth in Q4</li>
+        <li>Sales dipped in Q2 across all regions, indicating potential supply chain challenges</li>
+        <li>Category X outperformed consistently, contributing 25% to total revenue</li>
+      </ul>
 
-  <div class="column right-column">
-    <h2>US Sales YOY Dashboard</h2>
-    <p>This dashboard explores year-over-year sales trends across the United States, highlighting performance by region and category. Built with Power BI using DAX, Power Query, and custom visuals.</p>
+      <p><a href="files/US-Sales-YOY.pbix">⬇️ Download .pbix file</a></p>
+    </div>
 
-    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYmUxYmYzYzMtMzkyZi00NzE0LWFlYmQtYmJmNGYzMmRmOTMzIiwidCI6ImU1YWQxODI4LWZiNWUtNDU3OS05MWM3LTlkODk4ZTRhMDY1MyJ9"></iframe>
-  </div>
+    <div class="column right-column">
+      <h2>US Sales YOY Dashboard</h2>
+      <p>This dashboard explores year-over-year sales trends across the United States, highlighting performance by region and category. Built with Power BI using DAX, Power Query, and custom visuals.</p>
+
+      <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYmUxYmYzYzMtMzkyZi00NzE0LWFlYmQtYmJmNGYzMmRmOTMzIiwidCI6ImU1YWQxODI4LWZiNWUtNDU3OS05MWM3LTlkODk4ZTRhMDY1MyJ9"></iframe>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ciara Rechtzigel. Built with HTML, Fira Code, and Power BI.</p>
+  </footer>
 </body>
 </html>
