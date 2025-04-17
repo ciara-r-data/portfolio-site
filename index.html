@@ -40,7 +40,8 @@
     footer {
       background-color: var(--pink-accent);
       color: #ffffff;
-    ---  justify-content: center;
+      display: flex;
+      justify-content: center;
     }
     footer p {
       margin: 0;
@@ -49,11 +50,22 @@
     }
     main {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       gap: 40px;
       padding: 40px;
       box-sizing: border-box;
       flex: 1;
+    }
+    @media (min-width: 768px) {
+      main {
+        flex-direction: row;
+      }
+      .left-column {
+        width: 30%;
+      }
+      .middle-column {
+        width: 68%;
+      }
     }
     .column {
       padding: 20px;
@@ -61,13 +73,6 @@
       background-color: #ffffff;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    .left-column {
-      width: 30%;
-    }
-    .middle-column {
-      width: 68%;
-      ---padding-right: 25%;
     }
     h1 {
       font-size: 1.6em;
@@ -79,8 +84,6 @@
       color: #111;
     }
     ul {
-      ---list-style: none;
-      ----list-style-position: inside;
       padding-left: 0;
     }
     .skill {
@@ -102,13 +105,13 @@
       font-size: 0.8em;
       line-height: 1.6;
     }
-    tr{
+    tr {
       border-bottom: 1px solid #f9f9f9;
-      }
-    th{
-      padding-bottom:10px;
     }
-    td{
+    th {
+      padding-bottom: 10px;
+    }
+    td {
       font-size: .8em;
       font-weight: 400;
       padding: 5px;
@@ -127,6 +130,22 @@
   </header>
 
   <main>
+    <div class="column middle-column">
+      <h2>Projects</h2>
+      <table>
+        <tr>
+          <th></th>
+          <th>Description</th>
+          <th>Key Skills Utilized</th>
+        </tr>
+        <tr>
+          <td><a href="nsat-predictor.html">NSAT Predictor Tool</a></td>
+          <td>A predictive modeling dashboard built in Power BI to explore the impact of Average Speed of Answer (ASA) on Net Satisfaction (NSAT). Users can interactively simulate NSAT outcomes based on ASA inputs and benchmark them against real-world data.</td>
+          <td>Power BI, DAX, Power Query, Regression Modeling, Parameter Slicers, Data Storytelling, Customer Experience Analytics</td>
+        </tr>
+      </table>
+    </div>
+
     <div class="column left-column">
       <h1>Ciara Rechtzigel</h1>
       <p>Customer Experience Analyst with over 5+ years of experience analyzing customer interactions across the full journey—from social media and product purchase to surveys, service calls, and self-service tools. My work focuses on turning complex data into meaningful insights that help brands deliver more seamless, personalized, and efficient experiences. Whether it’s synthesizing voice of customer feedback, modeling satisfaction predictors, or mapping service pain points, I specialize in connecting the dots between customer behavior and business action.</p>
@@ -142,32 +161,15 @@
       </ul>
 
       <h2>Current Position</h2>
-      <p>Customer Experience Analyst<br> <span class = "item_details">Sleep Number Corporation | May 2022 – August 2023</span> </p>
+      <p>Customer Experience Analyst<br> <span class="item_details">Sleep Number Corporation | May 2022 – August 2023</span> </p>
 
       <h2>Previous Positions</h2>
-      <p>CRC Data Analyst<br> <span class = "item_details">Sleep Number Corporation | May 2022 – August 2023</span> </p>
-      <p>Social Media Care Analyst<br> <span class = "item_details">General Motors | January 2020 – May 2022</span> </p>
+      <p>CRC Data Analyst<br> <span class="item_details">Sleep Number Corporation | May 2022 – August 2023</span> </p>
+      <p>Social Media Care Analyst<br> <span class="item_details">General Motors | January 2020 – May 2022</span> </p>
 
       <h2>Education</h2>
-      <p>M.S. in Data Science <br> <span class = "item_details"> Eastern University August 2022 – August 2023 </span> </p>
-      <p> B.A. in Graphic Design <br> <span class = "item_details"> Oakland University  September 2014 – April 2018 </span> </p>
-    </div>
-
-    <div class="column middle-column">
-      <h2>Projects</h2>
-    <table>
-      <tr>
-        <th></th>
-        <th>Description</th>
-        <th>Key Skills Utilized</th>
-      </trtr>
-      <tr>
-        <td><a href="nsat-predictor.html">NSAT Predictor Tool</a></td>
-        <td>A predictive modeling dashboard built in Power BI to explore the impact of Average Speed of Answer (ASA) on Net Satisfaction (NSAT). Users can interactively simulate NSAT outcomes based on ASA inputs and benchmark them against real-world data.</td>
-        <td>Power BI, DAX, Power Query, Regression Modeling, Parameter Slicers, Data Storytelling, Customer Experience Analytics</td>
-      </tr>
-    </table>
-      
+      <p>M.S. in Data Science <br> <span class="item_details"> Eastern University August 2022 – August 2023 </span> </p>
+      <p> B.A. in Graphic Design <br> <span class="item_details"> Oakland University  September 2014 – April 2018 </span> </p>
     </div>
   </main>
 
